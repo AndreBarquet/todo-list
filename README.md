@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with for study the following content: 
+### `Typescript` 
+### `Context Api` 
+### `React-hook-form-`
 
 ## Available Scripts
 
