@@ -1,6 +1,6 @@
 # Description
 
-This project was created with for study the following content: 
+This project was created for study the following contents: 
 ### `Typescript` 
 ### `Context Api` 
 ### `React-hook-form`
