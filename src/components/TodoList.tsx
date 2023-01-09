@@ -14,12 +14,12 @@ function TodoList() {
   return (
     <div>
       {todoList?.length > 0 && todoList.map((currentTodo: ITodo) => (
-        <div key={currentTodo.id} className="list-item">
+        <div key={currentTodo.id} className="list-item" onClick={() => checkUncheckItem(currentTodo)}>
           <div className='content'>
             <input type="checkbox" data-testid="checkedItem" checked={currentTodo?.completed} onChange={() => checkUncheckItem(currentTodo)} />
             <label style={{ textDecoration: currentTodo?.completed ? 'line-through' : 'none' }}>{currentTodo?.description}</label>
           </div>
-          <FontAwesomeIcon icon="trash" size='xs' className='list-delete-icon' onClick={() => removeTodo(currentTodo)} />
+          <FontAwesomeIcon icon="trash" size='xs' onClick={(e) => { e.stopPropagation(); removeTodo(currentTodo) }} />
         </div>
       ))}
     </div>
