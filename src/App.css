@@ -1,38 +1,82 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  padding: 20px 15px;
+  background-color: #282c34;
+  color: white;
+  height: 100%;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+.todo-container{
+  min-height: 83vh;
+  margin: 1rem auto;
+  max-width: 22rem;
+  border: 1px solid;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.list-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 7px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.list-item .content{
+  display: flex;
+  align-items: self-end;
+}
+
+.list-item:hover{
+  background-color: #ebebeb;
+  color: black;
+  box-shadow: 0px 0px 9px 0px white;  
+}
+
+.list-item .list-delete-icon{
+  cursor: pointer;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form{
+  margin-top: 15px;
+}
+
+.form-error{
+  color: #eb7474;  
+  margin: 5px 2px;
+}
+
+.form input{
+  background-color: #00800000;
+  border: 2px solid;
+  border-radius: 5px;
+  height: 24px;
+  color: white;
+}
+
+.form .fields-section{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.form .submit-button{
+  margin-left: 10px;
+  border: 2px solid;
+  height: 30px;
+  width: 30px;
+  color: white;
+  border-radius: 15px;
+  background-color: #769dff;
 }
