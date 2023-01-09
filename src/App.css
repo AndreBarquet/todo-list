@@ -30,6 +30,21 @@
   cursor: pointer;
 }
 
+.delete-item-button{
+  background-color: #ffffff00;
+  color: white;
+  border: 1px solid;
+  border-radius: 15px;
+  height: 23px;
+  font-size: 12px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.delete-item-button:hover{
+  transform: scale(1.15);
+}
+
 .list-item .content{
   display: flex;
   align-items: self-end;
@@ -39,6 +54,10 @@
   background-color: #ebebeb;
   color: black;
   box-shadow: 0px 0px 9px 0px white;  
+}
+
+.list-item:hover .delete-item-button{
+  color: black;
 }
 
 .App-link {
