@@ -3,7 +3,7 @@
 This project was created with for study the following content: 
 ### `Typescript` 
 ### `Context Api` 
-### `React-hook-form-`
+### `React-hook-form`
 
 ## Available Scripts
 
