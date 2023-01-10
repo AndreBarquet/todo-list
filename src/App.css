@@ -14,7 +14,7 @@
 .todo-container{
   min-height: 83vh;
   margin: 1rem auto;
-  max-width: 22rem;
+  max-width: 28rem;
   border: 1px solid;
   border-radius: 7px;
   padding: 5px;
@@ -95,4 +95,36 @@
   color: white;
   border-radius: 15px;
   background-color: #769dff;
+}
+
+.summary-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 30rem;
+  margin: 15px auto;
+}
+
+.totals-card{
+  width: 120px;
+  text-align: left;
+  background-color: #6a6a6a21;
+  padding: 11px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 7px -7px #959595;
+}
+
+.totals-card .header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.totals-card p{
+  margin: 0px 0px 3px;
+  color: #cfcece;
+}
+
+.totals-card span{
+  font-weight: bold;
 }

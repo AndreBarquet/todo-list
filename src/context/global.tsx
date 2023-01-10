@@ -14,7 +14,7 @@ const GlobalContext = createContext<any | null>(null);
 const GlobalProvider = ({ children }: any) => {
   const [todoList, setTodoList] = useState<ITodo[]>(initialState.todoList);
 
-  const addTodo = (item: ITodo) => setTodoList((prevTodo) => [...prevTodo, item]);
+  const addTodo = (item: ITodo, callBack: any) => setTodoList((prevTodo) => [...prevTodo, item]);
   const removeTodo = (ItemToRemove: ITodo) => setTodoList(todoList.filter(current => current?.id !== ItemToRemove?.id))
   const checkUncheckItem = (item: ITodo) => setTodoList(todoList.map(current => current?.id === item?.id ? ({ ...current, completed: !current?.completed }) : current));
 

@@ -11,9 +11,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function ItemForm() {
   const { todoList, addTodo } = useContext(GlobalContext);
 
-  const { register, handleSubmit, /* watch, */ formState: { errors } } = useForm();
+  const { register, handleSubmit, /* watch, */ formState: { errors }, setValue } = useForm();
   const onSubmit = (data: any) => {
     addTodo({ ...data, id: todoList.length + 1 })
+    setValue("description", undefined);
   }
 
   // console.log(watch("description")); // watch input value by passing the name of it
