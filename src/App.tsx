@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <GlobalProvider>
-        <header className="App-header">Todo List</header>
+        <header className="App-header">To do List</header>
         <ItemForm />
         <div className='todo-container'>
           <TodoList />
