@@ -1,12 +1,12 @@
 // Context api
 import { useContext } from 'react';
-import { GlobalContext } from 'context/global';
+import { GlobalContext } from '@/context/global';
 
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Interfaces
-import ITodo from 'interfaces/ITodo';
+import ITodo from '@/interfaces/ITodo';
 
 function TodoList() {
   const { todoList, removeTodo, checkUncheckItem } = useContext(GlobalContext);

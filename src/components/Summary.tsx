@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import { GlobalContext } from 'context/global';
-import ITodo from 'interfaces/ITodo';
+import { GlobalContext } from '@/context/global';
+import ITodo from '@/interfaces/ITodo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Summary() {

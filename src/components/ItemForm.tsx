@@ -1,6 +1,6 @@
 // Context api
 import { useContext } from 'react';
-import { GlobalContext } from 'context/global';
+import { GlobalContext } from '@/context/global';
 
 // Form
 import { useForm } from "react-hook-form";

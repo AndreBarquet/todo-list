@@ -1,12 +1,12 @@
 import React from 'react';
 
 // Components
-import ItemForm from 'components/ItemForm';
-import TodoList from 'components/TodoList';
-import Summary from 'components/Summary';
+import ItemForm from '@/components/ItemForm';
+import TodoList from '@/components/TodoList';
+import Summary from '@/components/Summary';
 
 // Context Api
-import { GlobalProvider } from 'context/global';
+import { GlobalProvider } from '@/context/global';
 
 // Icons
 import { library } from '@fortawesome/fontawesome-svg-core';

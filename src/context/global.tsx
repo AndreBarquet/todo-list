@@ -1,4 +1,4 @@
-import ITodo from 'interfaces/ITodo'
+import ITodo from '@/interfaces/ITodo'
 import { createContext, useState } from 'react'
 
 interface InitialStateProps {
