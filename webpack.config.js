@@ -7,7 +7,7 @@ module.exports = {
   entry: './src/index.ts',
   mode: 'development',
   devServer: {
-    port: 4000,
+    port: 8081,
     open: true,
   },
   resolve: {
@@ -49,13 +49,13 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'ToDoApp',
+      name: 'TodoProject',
       filename: 'remoteEntry.js',
       exposes: {
         // expose each component
-        './TodoApp': './src/App',
-        './TodoList': './src/components/TodoList',
-        './TodoSummary': './src/components/Summary',
+        './TodoApp': '@/App',
+        './TodoList': '@/components/TodoList',
+        './TodoSummary': '@/components/Summary',
       },
       shared: {
         ...deps,
